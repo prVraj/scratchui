@@ -1,0 +1,62 @@
+.ui-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ui-space-2);
+  border: none;
+  border-radius: var(--ui-radius-md);
+  font-family: var(--ui-font-family);
+  font-weight: var(--ui-font-weight-medium);
+  line-height: var(--ui-line-height-tight);
+  cursor: pointer;
+  transition:
+    background-color var(--ui-duration-fast) var(--ui-ease-standard),
+    color var(--ui-duration-fast) var(--ui-ease-standard),
+    opacity var(--ui-duration-fast) var(--ui-ease-standard);
+}
+
+.ui-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ui-color-surface), 0 0 0 4px var(--ui-color-border-focus);
+}
+
+.ui-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Sizes */
+.ui-btn--sm { padding: var(--ui-space-1) var(--ui-space-3); font-size: var(--ui-font-size-sm); }
+.ui-btn--md { padding: var(--ui-space-2) var(--ui-space-4); font-size: var(--ui-font-size-md); }
+.ui-btn--lg { padding: var(--ui-space-3) var(--ui-space-5); font-size: var(--ui-font-size-lg); }
+
+/* Variants */
+.ui-btn--primary { background: var(--ui-color-primary); color: var(--ui-color-text-inverse); }
+.ui-btn--primary:hover:not(:disabled) { background: var(--ui-color-primary-hover); }
+
+.ui-btn--secondary { background: var(--ui-color-secondary); color: var(--ui-color-text); }
+.ui-btn--secondary:hover:not(:disabled) { background: var(--ui-color-secondary-hover); }
+
+.ui-btn--ghost { background: transparent; color: var(--ui-color-text); }
+.ui-btn--ghost:hover:not(:disabled) { background: var(--ui-color-secondary); }
+
+.ui-btn--danger { background: var(--ui-color-danger); color: var(--ui-color-text-inverse); }
+.ui-btn--danger:hover:not(:disabled) { opacity: 0.88; }
+
+/* Icon slot */
+.ui-btn__icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Loading spinner */
+.ui-btn__spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: var(--ui-radius-full);
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  animation: ui-btn-spin var(--ui-duration-slow) linear infinite;
+}
+
+@keyframes ui-btn-spin {
+  to { transform: rotate(360deg); }
+}

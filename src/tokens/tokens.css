@@ -1,0 +1,72 @@
+:root {
+  /* ── Colors ─────────────────────────────────── */
+  --ui-color-primary:         #0A0A0A;
+  --ui-color-primary-hover:   #262626;
+  --ui-color-secondary:       #F5F5F5;
+  --ui-color-secondary-hover: #E5E5E5;
+  --ui-color-surface:         #FFFFFF;
+  --ui-color-border:          #E5E5E5;
+  --ui-color-border-focus:    #0A0A0A;
+  --ui-color-text:            #1A1A1A;
+  --ui-color-text-inverse:    #FFFFFF;
+  --ui-color-muted:           #737373;
+  --ui-color-danger:          #DC2626;
+  --ui-color-success:         #16A34A;
+  --ui-color-warning:         #D97706;
+
+  /* ── Spacing ─────────────────────────────────── */
+  --ui-space-1:  4px;
+  --ui-space-2:  8px;
+  --ui-space-3:  12px;
+  --ui-space-4:  16px;
+  --ui-space-5:  20px;
+  --ui-space-6:  24px;
+  --ui-space-8:  32px;
+  --ui-space-10: 40px;
+  --ui-space-12: 48px;
+
+  /* ── Border Radius ───────────────────────────── */
+  --ui-radius-sm:   6px;
+  --ui-radius-md:   10px;
+  --ui-radius-lg:   14px;
+  --ui-radius-xl:   20px;
+  --ui-radius-full: 9999px;
+
+  /* ── Typography ──────────────────────────────── */
+  --ui-font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+                    'Helvetica Neue', Arial, sans-serif;
+  --ui-font-size-xs:         11px;
+  --ui-font-size-sm:         13px;
+  --ui-font-size-md:         15px;
+  --ui-font-size-lg:         17px;
+  --ui-font-size-xl:         20px;
+  --ui-font-weight-regular:  400;
+  --ui-font-weight-medium:   500;
+  --ui-font-weight-semibold: 600;
+  --ui-line-height-tight:    1.2;
+  --ui-line-height-base:     1.5;
+
+  /* ── Shadows ─────────────────────────────────── */
+  --ui-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --ui-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --ui-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.10);
+  --ui-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
+
+  /* ── Motion (HIG-aligned) ────────────────────── */
+  --ui-duration-instant: 80ms;
+  --ui-duration-fast:    150ms;
+  --ui-duration-base:    250ms;
+  --ui-duration-slow:    400ms;
+  --ui-duration-slower:  600ms;
+
+  --ui-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ui-ease-in:       cubic-bezier(0.4, 0, 1, 1);
+  --ui-ease-out:      cubic-bezier(0, 0, 0.2, 1);
+  --ui-ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-index ─────────────────────────────────── */
+  --ui-z-tooltip:  100;
+  --ui-z-dropdown: 200;
+  --ui-z-modal:    300;
+  --ui-z-toast:    400;
+}

@@ -1,0 +1,36 @@
+.ui-card {
+  background: var(--ui-color-surface);
+  border-radius: var(--ui-radius-lg);
+  font-family: var(--ui-font-family);
+  color: var(--ui-color-text);
+  box-sizing: border-box;
+}
+
+/* Padding sizes */
+.ui-card--pad-none { padding: 0; }
+.ui-card--pad-sm   { padding: var(--ui-space-3); }
+.ui-card--pad-md   { padding: var(--ui-space-6); }
+.ui-card--pad-lg   { padding: var(--ui-space-8); }
+
+/* Variants */
+.ui-card--default  { box-shadow: var(--ui-shadow-sm); }
+
+.ui-card--bordered {
+  border: 1px solid var(--ui-color-border);
+  box-shadow: none;
+}
+
+.ui-card--elevated { box-shadow: var(--ui-shadow-md); }
+
+/* Interactive state */
+.ui-card--interactive {
+  cursor: pointer;
+  transition: box-shadow var(--ui-duration-base) var(--ui-ease-standard);
+}
+
+.ui-card--interactive:hover { box-shadow: var(--ui-shadow-lg); }
+
+.ui-card--interactive:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ui-color-surface), 0 0 0 4px var(--ui-color-border-focus);
+}

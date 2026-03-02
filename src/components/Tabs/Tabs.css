@@ -1,0 +1,57 @@
+.ui-tabs {}
+
+/* Tab list */
+.ui-tabs__list {
+  display: flex;
+  border-bottom: 1px solid var(--ui-color-border);
+  gap: 0;
+}
+
+/* Tab button */
+.ui-tabs__tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--ui-space-2) var(--ui-space-4);
+  padding-bottom: calc(var(--ui-space-2) + 2px);
+  background: transparent;
+  border: none;
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-medium);
+  color: var(--ui-color-muted);
+  cursor: pointer;
+  transition: color var(--ui-duration-fast) var(--ui-ease-standard);
+  outline: none;
+  margin-bottom: -1px;
+}
+
+.ui-tabs__tab:hover { color: var(--ui-color-text); }
+.ui-tabs__tab--active { color: var(--ui-color-text); }
+
+.ui-tabs__tab:focus-visible {
+  box-shadow: 0 0 0 2px var(--ui-color-border-focus);
+  border-radius: var(--ui-radius-sm);
+}
+
+/* Active indicator — shared by static and motion variants.
+   Static: appears instantly. Motion: slides via layoutId. */
+.ui-tabs__indicator {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--ui-color-primary);
+  border-radius: var(--ui-radius-full);
+}
+
+/* Tab panel */
+.ui-tabs__panel {
+  padding: var(--ui-space-5) 0;
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-md);
+  color: var(--ui-color-text);
+  line-height: var(--ui-line-height-base);
+}

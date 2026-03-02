@@ -1,0 +1,51 @@
+.ui-tooltip-root {
+  position: relative;
+  display: inline-flex;
+}
+
+/* Positioning anchor — handles offset and centering via CSS transforms.
+   Motion animates the inner .ui-tooltip, so transforms don't conflict. */
+.ui-tooltip-anchor {
+  position: absolute;
+  z-index: var(--ui-z-tooltip);
+  pointer-events: none;
+}
+
+.ui-tooltip-anchor--top {
+  bottom: calc(100% + var(--ui-space-2));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ui-tooltip-anchor--bottom {
+  top: calc(100% + var(--ui-space-2));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ui-tooltip-anchor--left {
+  right: calc(100% + var(--ui-space-2));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ui-tooltip-anchor--right {
+  left: calc(100% + var(--ui-space-2));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tooltip bubble */
+.ui-tooltip {
+  display: block;
+  padding: var(--ui-space-1) var(--ui-space-3);
+  background: var(--ui-color-primary);
+  color: var(--ui-color-text-inverse);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-xs);
+  font-weight: var(--ui-font-weight-medium);
+  line-height: var(--ui-line-height-tight);
+  border-radius: var(--ui-radius-sm);
+  white-space: nowrap;
+  box-shadow: var(--ui-shadow-md);
+}

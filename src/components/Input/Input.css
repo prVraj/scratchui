@@ -1,0 +1,69 @@
+.ui-input-root { display: flex; flex-direction: column; gap: var(--ui-space-1); }
+
+/* Label */
+.ui-input-label {
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-medium);
+  color: var(--ui-color-text);
+  line-height: var(--ui-line-height-tight);
+}
+
+/* Input wrapper */
+.ui-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Native input */
+.ui-input {
+  width: 100%;
+  font-family: var(--ui-font-family);
+  color: var(--ui-color-text);
+  background: var(--ui-color-surface);
+  border: 1px solid var(--ui-color-border);
+  border-radius: var(--ui-radius-md);
+  outline: none;
+  transition: border-color var(--ui-duration-fast) var(--ui-ease-standard),
+              box-shadow var(--ui-duration-fast) var(--ui-ease-standard);
+}
+
+.ui-input::placeholder { color: var(--ui-color-muted); }
+
+.ui-input:focus {
+  border-color: var(--ui-color-border-focus);
+  box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.08);
+}
+
+.ui-input:disabled { opacity: 0.4; cursor: not-allowed; background: var(--ui-color-secondary); }
+
+/* Sizes */
+.ui-input-root--sm .ui-input { padding: var(--ui-space-1) var(--ui-space-3); font-size: var(--ui-font-size-sm); }
+.ui-input-root--md .ui-input { padding: var(--ui-space-2) var(--ui-space-3); font-size: var(--ui-font-size-md); }
+.ui-input-root--lg .ui-input { padding: var(--ui-space-3) var(--ui-space-4); font-size: var(--ui-font-size-lg); }
+
+/* Error state */
+.ui-input-root--error .ui-input { border-color: var(--ui-color-danger); }
+.ui-input-root--error .ui-input:focus { box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12); }
+
+/* Success state */
+.ui-input-root--success .ui-input { border-color: var(--ui-color-success); }
+.ui-input-root--success .ui-input:focus { box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12); }
+
+/* Icon slots */
+.ui-input-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: var(--ui-color-muted);
+  pointer-events: none;
+}
+.ui-input-icon--left { left: var(--ui-space-3); }
+.ui-input-icon--right { right: var(--ui-space-3); }
+.ui-input-wrap:has(.ui-input-icon--left) .ui-input { padding-left: var(--ui-space-8); }
+.ui-input-wrap:has(.ui-input-icon--right) .ui-input { padding-right: var(--ui-space-8); }
+
+/* Hint / error text */
+.ui-input-desc { font-family: var(--ui-font-family); font-size: var(--ui-font-size-xs); color: var(--ui-color-muted); }
+.ui-input-desc--error { color: var(--ui-color-danger); }

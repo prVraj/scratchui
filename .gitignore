@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+scratchui-docs/node_modules/
+
+# Build outputs
+dist/
+scratchui-docs/.next/
+scratchui-docs/out/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor
+.vscode/
+.idea/
