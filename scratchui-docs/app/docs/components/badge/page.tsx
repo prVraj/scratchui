@@ -22,24 +22,28 @@ export default function Example() {
 
 const propsRows = [
   { prop: 'label', type: 'string', defaultVal: '—', description: 'Text content of the badge.' },
-  { prop: 'variant', type: "'default' | 'outline' | 'count' | 'danger'", defaultVal: "'default'", description: 'Visual style of the badge.' },
+  { prop: 'variant', type: "'default' | 'success' | 'warning' | 'danger' | 'outline'", defaultVal: "'default'", description: 'Visual style of the badge.' },
   { prop: 'size', type: "'sm' | 'md'", defaultVal: "'md'", description: 'Controls text size and padding.' },
+  { prop: 'dot', type: 'boolean', defaultVal: 'false', description: 'Shows a colored dot before the label.' },
+  { prop: 'aria-label', type: 'string', defaultVal: '—', description: 'Accessible label for screen readers.' },
 ]
 
 const BadgePreview = () => (
   <div className="flex flex-wrap items-center gap-3">
-    {/* PLACEHOLDER: Replace with actual scratchUI Badge once published */}
     <span className="inline-flex items-center px-2.5 py-0.5 rounded-[6px] bg-[#F3F4F6] text-[#0A0A0A] text-[11px] font-medium border border-[#E5E7EB]">
       New
     </span>
-    <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#0A0A0A] text-white text-[11px] font-semibold">
-      12
+    <span className="inline-flex items-center px-2.5 py-0.5 rounded-[6px] bg-green-50 text-green-700 text-[11px] font-medium border border-green-200">
+      Shipped
     </span>
-    <span className="inline-flex items-center px-2.5 py-0.5 rounded-[6px] text-[#0A0A0A] text-[11px] font-medium border border-[#0A0A0A]">
-      Beta
+    <span className="inline-flex items-center px-2.5 py-0.5 rounded-[6px] bg-amber-50 text-amber-700 text-[11px] font-medium border border-amber-200">
+      Almost there
     </span>
     <span className="inline-flex items-center px-2.5 py-0.5 rounded-[6px] bg-red-50 text-red-700 text-[11px] font-medium border border-red-200">
-      Deprecated
+      On fire
+    </span>
+    <span className="inline-flex items-center px-2.5 py-0.5 rounded-[6px] text-[#0A0A0A] text-[11px] font-medium border border-[#0A0A0A]">
+      Draft
     </span>
   </div>
 )

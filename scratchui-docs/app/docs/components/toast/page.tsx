@@ -30,9 +30,9 @@ export default function Example() {
 
 const propsRows = [
   { prop: 'message', type: 'string', defaultVal: '—', description: 'Text content of the toast notification.' },
-  { prop: 'variant', type: "'success' | 'error' | 'info'", defaultVal: "'info'", description: 'Visual style and icon for the toast.' },
-  { prop: 'duration', type: 'number', defaultVal: '3000', description: 'Time in milliseconds before the toast auto-dismisses.' },
-  { prop: 'dismissible', type: 'boolean', defaultVal: 'true', description: 'Whether the toast shows a close button.' },
+  { prop: 'variant', type: "'default' | 'success' | 'warning' | 'danger'", defaultVal: "'default'", description: 'Visual style of the toast.' },
+  { prop: 'duration', type: 'number', defaultVal: '4000', description: 'Time in milliseconds before the toast auto-dismisses.' },
+  { prop: 'onClose', type: '() => void', defaultVal: '—', description: 'Called when the toast dismisses. Also shows the close button.' },
 ]
 
 export default async function ToastPage() {

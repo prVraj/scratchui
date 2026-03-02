@@ -1,13 +1,14 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { ChevronDown, Edit, Trash2, Share2 } from 'lucide-react'
+import { ChevronDown, Edit, Copy, Archive, Trash2 } from 'lucide-react'
 import { motion, AnimatePresence } from 'motion/react'
 
 const items = [
-  { icon: Edit, label: 'Edit', danger: false },
-  { icon: Share2, label: 'Share', danger: false },
-  { icon: Trash2, label: 'Delete', danger: true },
+  { icon: Edit,    label: 'Edit',      danger: false },
+  { icon: Copy,    label: 'Duplicate', danger: false },
+  { icon: Archive, label: 'Archive',   danger: false },
+  { icon: Trash2,  label: 'Delete',    danger: true  },
 ]
 
 export default function DropdownPreview() {
@@ -24,7 +25,6 @@ export default function DropdownPreview() {
 
   return (
     <div className="relative inline-block" ref={ref}>
-      {/* PLACEHOLDER: Replace with actual scratchUI Dropdown once published */}
       <motion.button
         onClick={() => setOpen(!open)}
         aria-expanded={open}

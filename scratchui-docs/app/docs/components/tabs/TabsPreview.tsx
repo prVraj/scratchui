@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 
 const tabs = [
-  { id: 'overview', label: 'Overview', content: 'High-level summary of the thing. You know, the gist.' },
-  { id: 'details', label: 'Details', content: 'The nitty-gritty. Scroll carefully — details are lurking.' },
-  { id: 'changelog', label: 'Changelog', content: 'v1.0.0 → v1.0.1: Fixed a bug that nobody reported but everyone felt.' },
+  { id: 'overview',  label: 'Overview',  content: 'High-level summary of the thing. You know, the gist.'         },
+  { id: 'details',   label: 'Details',   content: 'The nitty-gritty. Scroll carefully — details are lurking.'     },
+  { id: 'settings',  label: 'Settings',  content: 'Toggle things. Break things. Toggle them back.'                },
 ]
 
 export default function TabsPreview() {

@@ -22,11 +22,13 @@ export default function Example() {
 
 const propsRows = [
   { prop: 'label', type: 'string', defaultVal: '—', description: 'The text displayed inside the button.' },
-  { prop: 'variant', type: "'primary' | 'secondary' | 'ghost'", defaultVal: "'primary'", description: 'Visual style of the button.' },
+  { prop: 'variant', type: "'primary' | 'secondary' | 'ghost' | 'danger'", defaultVal: "'primary'", description: 'Visual style of the button.' },
   { prop: 'size', type: "'sm' | 'md' | 'lg'", defaultVal: "'md'", description: 'Size preset controlling padding and font size.' },
   { prop: 'disabled', type: 'boolean', defaultVal: 'false', description: 'Prevents interaction and dims the button.' },
+  { prop: 'loading', type: 'boolean', defaultVal: 'false', description: 'Shows a spinner and disables interaction.' },
+  { prop: 'leftIcon', type: 'ReactNode', defaultVal: '—', description: 'Icon rendered to the left of the label.' },
+  { prop: 'rightIcon', type: 'ReactNode', defaultVal: '—', description: 'Icon rendered to the right of the label.' },
   { prop: 'onClick', type: '() => void', defaultVal: '—', description: 'Callback fired when the button is clicked.' },
-  { prop: 'type', type: "'button' | 'submit' | 'reset'", defaultVal: "'button'", description: 'HTML button type attribute.' },
 ]
 
 export default async function ButtonPage() {

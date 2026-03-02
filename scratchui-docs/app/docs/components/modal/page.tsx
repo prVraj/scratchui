@@ -35,11 +35,12 @@ export default function Example() {
 }`
 
 const propsRows = [
-  { prop: 'open', type: 'boolean', defaultVal: 'false', description: 'Controls whether the modal is visible.' },
+  { prop: 'isOpen', type: 'boolean', defaultVal: 'false', description: 'Controls whether the modal is visible.' },
   { prop: 'onClose', type: '() => void', defaultVal: '—', description: 'Called when the modal should close (backdrop click, Escape key).' },
-  { prop: 'children', type: 'ReactNode', defaultVal: '—', description: 'Modal content. Use Modal.Header, Modal.Content, Modal.Footer.' },
-  { prop: 'size', type: "'sm' | 'md' | 'lg'", defaultVal: "'md'", description: 'Controls the max-width of the modal.' },
-  { prop: 'closeOnBackdrop', type: 'boolean', defaultVal: 'true', description: 'Whether clicking the backdrop closes the modal.' },
+  { prop: 'title', type: 'string', defaultVal: '—', description: 'Heading text rendered in the modal header.' },
+  { prop: 'children', type: 'ReactNode', defaultVal: '—', description: 'Body content of the modal.' },
+  { prop: 'size', type: "'sm' | 'md' | 'lg'", defaultVal: "'md'", description: 'Controls the max-width of the modal panel.' },
+  { prop: 'closeOnOverlayClick', type: 'boolean', defaultVal: 'true', description: 'Whether clicking the backdrop closes the modal.' },
 ]
 
 export default async function ModalPage() {

@@ -11,8 +11,8 @@ export default function CardPreview() {
       className="w-full max-w-sm rounded-[8px] border border-[#E5E7EB] bg-white shadow-sm overflow-hidden cursor-pointer"
     >
       <div className="px-5 pt-5 pb-4 border-b border-[#E5E7EB]">
-        <h3 className="text-[15px] font-medium text-[#0A0A0A] mb-1">Getting Started</h3>
-        <p className="text-[13px] text-[#9CA3AF]">Everything you need to know in one place.</p>
+        <h3 className="text-[15px] font-medium text-[#0A0A0A] mb-1">You actually read this</h3>
+        <p className="text-[13px] text-[#9CA3AF]">Most developers skip card demos. You&apos;re different. Respect.</p>
       </div>
       <div className="px-5 py-4 text-[13px] text-[#525252]">
         Cards are just boxes, but intentional ones. Hover me to feel the lift.
@@ -23,7 +23,7 @@ export default function CardPreview() {
           transition={{ type: 'spring', stiffness: 400, damping: 25 }}
           className="text-[13px] font-medium text-[#0A0A0A] inline-flex items-center gap-1"
         >
-          Read more →
+          Learn more →
         </motion.button>
       </div>
     </motion.div>

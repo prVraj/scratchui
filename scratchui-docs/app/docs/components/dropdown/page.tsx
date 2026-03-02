@@ -25,9 +25,9 @@ export default function Example() {
 
 const propsRows = [
   { prop: 'trigger', type: 'ReactNode', defaultVal: '—', description: 'Element that opens the dropdown on click.' },
-  { prop: 'children', type: 'ReactNode', defaultVal: '—', description: 'Dropdown items. Use Dropdown.Item and Dropdown.Separator.' },
-  { prop: 'align', type: "'left' | 'right'", defaultVal: "'left'", description: 'Alignment of the menu relative to the trigger.' },
-  { prop: 'closeOnSelect', type: 'boolean', defaultVal: 'true', description: 'Whether clicking an item closes the dropdown.' },
+  { prop: 'items', type: 'DropdownItem[]', defaultVal: '—', description: 'Array of items: { label, value, icon?, disabled? }.' },
+  { prop: 'onSelect', type: '(value: string) => void', defaultVal: '—', description: 'Called with the selected item value.' },
+  { prop: 'position', type: "'bottom-left' | 'bottom-right'", defaultVal: "'bottom-left'", description: 'Where the menu appears relative to the trigger.' },
 ]
 
 export default async function DropdownPage() {

@@ -24,9 +24,9 @@ export default function Example() {
 }`
 
 const propsRows = [
-  { prop: 'content', type: 'string | ReactNode', defaultVal: '—', description: 'Text or element shown inside the tooltip.' },
-  { prop: 'children', type: 'ReactNode', defaultVal: '—', description: 'The element that triggers the tooltip on hover.' },
-  { prop: 'placement', type: "'top' | 'bottom' | 'left' | 'right'", defaultVal: "'top'", description: 'Where the tooltip appears relative to the trigger.' },
+  { prop: 'content', type: 'string', defaultVal: '—', description: 'Text shown inside the tooltip.' },
+  { prop: 'children', type: 'ReactNode', defaultVal: '—', description: 'The element that triggers the tooltip on hover/focus.' },
+  { prop: 'position', type: "'top' | 'bottom' | 'left' | 'right'", defaultVal: "'top'", description: 'Where the tooltip appears relative to the trigger.' },
   { prop: 'delay', type: 'number', defaultVal: '200', description: 'Delay in ms before tooltip appears.' },
 ]
 

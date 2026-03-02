@@ -26,10 +26,9 @@ export default function Example() {
 }`
 
 const propsRows = [
-  { prop: 'defaultValue', type: 'string', defaultVal: '—', description: 'The tab active by default (uncontrolled).' },
-  { prop: 'value', type: 'string', defaultVal: '—', description: 'Controlled active tab value.' },
-  { prop: 'onValueChange', type: '(value: string) => void', defaultVal: '—', description: 'Called when the active tab changes.' },
-  { prop: 'orientation', type: "'horizontal' | 'vertical'", defaultVal: "'horizontal'", description: 'Layout direction of the tab list.' },
+  { prop: 'tabs', type: 'Tab[]', defaultVal: '—', description: 'Array of tabs: { label, value, content }.' },
+  { prop: 'defaultValue', type: 'string', defaultVal: 'tabs[0].value', description: 'The tab active by default.' },
+  { prop: 'onChange', type: '(value: string) => void', defaultVal: '—', description: 'Called when the active tab changes.' },
 ]
 
 export default async function TabsPage() {

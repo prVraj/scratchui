@@ -49,13 +49,13 @@ export default function TooltipPreview() {
   return (
     /* PLACEHOLDER: Replace with actual scratchUI Tooltip once published */
     <div className="flex items-end gap-6 pb-4">
-      <Tooltip content="Saves your work. Hopefully.">
+      <Tooltip content="You found the tooltip. Achievement unlocked.">
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           className="px-4 py-2 border border-[#E5E7EB] text-[13px] text-[#525252] rounded-[6px] hover:bg-[#F9FAFB] transition-colors"
         >
-          Save
+          Hover me
         </motion.button>
       </Tooltip>
 
@@ -66,16 +66,6 @@ export default function TooltipPreview() {
           className="px-4 py-2 border border-red-200 text-red-700 text-[13px] rounded-[6px] hover:bg-red-50 transition-colors"
         >
           Delete
-        </motion.button>
-      </Tooltip>
-
-      <Tooltip content="Been here longer than your last sprint.">
-        <motion.button
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          className="px-4 py-2 border border-[#E5E7EB] text-[13px] text-[#525252] rounded-[6px] hover:bg-[#F9FAFB] transition-colors"
-        >
-          Info
         </motion.button>
       </Tooltip>
     </div>

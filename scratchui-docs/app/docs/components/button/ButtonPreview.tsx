@@ -4,16 +4,20 @@ import { motion } from 'motion/react'
 
 const variants = [
   {
-    label: 'Save changes',
+    label: 'Ship it',
     className: 'bg-[#0A0A0A] text-white',
   },
   {
-    label: 'Cancel',
+    label: 'Maybe later',
     className: 'bg-white text-[#0A0A0A] border border-[#E5E7EB]',
   },
   {
-    label: 'Learn more',
+    label: "I'm just browsing",
     className: 'text-[#525252] hover:bg-[#F3F4F6]',
+  },
+  {
+    label: 'Delete everything',
+    className: 'bg-[#DC2626] text-white',
   },
 ]
 

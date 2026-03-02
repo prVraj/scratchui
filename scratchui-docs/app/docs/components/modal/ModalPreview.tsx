@@ -16,7 +16,7 @@ export default function ModalPreview() {
         whileTap={{ scale: 0.97 }}
         className="px-4 py-2 bg-[#0A0A0A] text-white text-[13px] rounded-[6px] font-medium"
       >
-        Open modal
+        Open Modal
       </motion.button>
 
       <AnimatePresence>
@@ -48,7 +48,7 @@ export default function ModalPreview() {
             >
               <div className="flex items-start justify-between mb-4">
                 <h2 id="modal-title" className="text-[22px] font-medium text-[#0A0A0A]">
-                  Confirm action
+                  Before you go
                 </h2>
                 <button
                   onClick={() => setOpen(false)}
@@ -59,7 +59,7 @@ export default function ModalPreview() {
                 </button>
               </div>
               <p className="text-[15px] text-[#525252] leading-relaxed mb-6">
-                Are you sure you want to do this? It demands your full attention and blocks everything else — just like that one teammate in standups.
+                Are you sure? We worked really hard on this button.
               </p>
               <div className="flex gap-3 justify-end">
                 <motion.button
@@ -68,7 +68,7 @@ export default function ModalPreview() {
                   whileTap={{ scale: 0.97 }}
                   className="px-4 py-2 text-[13px] text-[#525252] border border-[#E5E7EB] rounded-[6px] hover:bg-[#F9FAFB] transition-colors"
                 >
-                  Cancel
+                  Never mind
                 </motion.button>
                 <motion.button
                   onClick={() => setOpen(false)}
@@ -76,7 +76,7 @@ export default function ModalPreview() {
                   whileTap={{ scale: 0.97 }}
                   className="px-4 py-2 text-[13px] bg-[#0A0A0A] text-white rounded-[6px]"
                 >
-                  Confirm
+                  Yes, do it
                 </motion.button>
               </div>
             </motion.div>

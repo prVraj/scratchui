@@ -7,18 +7,18 @@ import { motion, AnimatePresence } from 'motion/react'
 const items = [
   {
     id: 'q1',
-    question: 'Does it have any dependencies?',
-    answer: "Zero. Nada. Zilch. Just import scratchui and the tokens. You're done. Go touch grass.",
+    question: 'What is scratchUI?',
+    answer: 'A minimal React component library. Two modes, zero drama.',
   },
   {
     id: 'q2',
-    question: 'Can I use it with Next.js?',
-    answer: "Yes. Next.js, Vite, Remix — we don't discriminate. Works wherever React works.",
+    question: 'Is it production ready?',
+    answer: "It's ready when you are.",
   },
   {
     id: 'q3',
-    question: 'Is it accessible?',
-    answer: 'ARIA attributes are baked in, not bolted on. Keyboard navigation just works.',
+    question: 'Do I need to know Tailwind?',
+    answer: "Nope. Pure CSS. Your existing styles won't cry.",
   },
 ]
 

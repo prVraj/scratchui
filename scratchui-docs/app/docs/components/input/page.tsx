@@ -30,25 +30,32 @@ const propsRows = [
 ]
 
 const InputPreview = () => (
-  <div className="flex flex-col gap-3 w-full max-w-sm">
-    {/* PLACEHOLDER: Replace with actual scratchUI Input once published */}
-    <input
-      type="email"
-      placeholder="Email address"
-      className="px-3 py-2 text-[13px] border border-[#E5E7EB] rounded-[6px] bg-white text-[#0A0A0A] placeholder-[#9CA3AF] outline-none focus:border-[#0A0A0A] transition-colors w-full"
-      readOnly
-    />
-    <input
-      type="password"
-      placeholder="Password"
-      className="px-3 py-2 text-[13px] border border-[#E5E7EB] rounded-[6px] bg-white text-[#0A0A0A] placeholder-[#9CA3AF] outline-none focus:border-[#0A0A0A] transition-colors w-full"
-      readOnly
-    />
-    <input
-      placeholder="Search..."
-      disabled
-      className="px-3 py-2 text-[13px] border border-[#E5E7EB] rounded-[6px] bg-[#F9FAFB] text-[#9CA3AF] placeholder-[#D1D5DB] outline-none cursor-not-allowed w-full"
-    />
+  <div className="flex flex-col gap-4 w-full max-w-sm">
+    <div className="flex flex-col gap-1">
+      <label className="text-[13px] font-medium text-[#0A0A0A]">Email address</label>
+      <input
+        type="email"
+        placeholder="you@somewhere.com"
+        className="px-3 py-2 text-[13px] border border-[#E5E7EB] rounded-[6px] bg-white text-[#0A0A0A] placeholder-[#9CA3AF] outline-none focus:border-[#0A0A0A] transition-colors w-full"
+        readOnly
+      />
+    </div>
+    <div className="flex flex-col gap-1">
+      <input
+        type="email"
+        defaultValue="notanemail"
+        className="px-3 py-2 text-[13px] border border-[#DC2626] rounded-[6px] bg-white text-[#0A0A0A] outline-none w-full"
+        readOnly
+      />
+      <span className="text-[12px] text-[#DC2626]">{"That doesn't look right"}</span>
+    </div>
+    <div className="flex flex-col gap-1">
+      <input
+        placeholder="Read only, like your manager's mind"
+        disabled
+        className="px-3 py-2 text-[13px] border border-[#E5E7EB] rounded-[6px] bg-[#F9FAFB] text-[#9CA3AF] placeholder-[#D1D5DB] outline-none cursor-not-allowed w-full"
+      />
+    </div>
   </div>
 )
 

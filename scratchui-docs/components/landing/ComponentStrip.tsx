@@ -3,7 +3,7 @@ const components = [
     name: 'Button',
     preview: (
       <button className="px-4 py-2 bg-[#0A0A0A] text-white text-[13px] rounded-[6px] font-medium hover:bg-[#262626] transition-colors">
-        Click me
+        Ship it
       </button>
     ),
   },
@@ -20,7 +20,7 @@ const components = [
     preview: (
       <input
         type="text"
-        placeholder="Type something..."
+        placeholder="you@somewhere.com"
         className="w-full px-3 py-2 text-[13px] border border-[#E5E7EB] rounded-[6px] bg-white text-[#0A0A0A] placeholder-[#9CA3AF] outline-none focus:border-[#0A0A0A] transition-colors"
         readOnly
       />
@@ -30,8 +30,8 @@ const components = [
     name: 'Card',
     preview: (
       <div className="w-full p-4 rounded-[8px] border border-[#E5E7EB] bg-white shadow-sm">
-        <p className="text-[13px] font-medium text-[#0A0A0A] mb-1">Card Title</p>
-        <p className="text-[11px] text-[#9CA3AF]">A well-padded surface.</p>
+        <p className="text-[13px] font-medium text-[#0A0A0A] mb-1">You actually read this</p>
+        <p className="text-[11px] text-[#9CA3AF]">Respect.</p>
       </div>
     ),
   },

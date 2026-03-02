@@ -29,9 +29,9 @@ export default function Example() {
 
 const propsRows = [
   { prop: 'children', type: 'ReactNode', defaultVal: '—', description: 'Content rendered inside the card.' },
-  { prop: 'className', type: 'string', defaultVal: '—', description: 'Additional class names for the root element.' },
-  { prop: 'shadow', type: "'none' | 'sm' | 'md'", defaultVal: "'sm'", description: 'Shadow depth of the card.' },
-  { prop: 'bordered', type: 'boolean', defaultVal: 'true', description: 'Whether to show the border.' },
+  { prop: 'variant', type: "'default' | 'bordered' | 'elevated'", defaultVal: "'default'", description: 'Visual style of the card.' },
+  { prop: 'padding', type: "'none' | 'sm' | 'md' | 'lg'", defaultVal: "'md'", description: 'Internal padding of the card.' },
+  { prop: 'onClick', type: '() => void', defaultVal: '—', description: 'Makes the card interactive (adds role="button").' },
 ]
 
 export default async function CardPage() {

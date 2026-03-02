@@ -60,10 +60,10 @@ function ToastItem({ toast, onDismiss }: { toast: Toast; onDismiss: () => void }
 let toastId = 0
 
 const BUTTONS = [
-  { label: 'Success', variant: 'success' as const, msg: 'Build succeeded. Celebrate accordingly.' },
-  { label: 'Error',   variant: 'error'   as const, msg: 'Linting your vibes...'                  },
-  { label: 'Warning', variant: 'warning' as const, msg: 'Merging conflicts with reality.'          },
-  { label: 'Info',    variant: 'info'    as const, msg: 'Running rm -rf node_modules (again).'    },
+  { label: 'Success', variant: 'success' as const, msg: 'Changes saved. Nice.'             },
+  { label: 'Error',   variant: 'error'   as const, msg: 'Something went wrong. Classic.'   },
+  { label: 'Warning', variant: 'warning' as const, msg: 'You might want to check that.'    },
+  { label: 'Info',    variant: 'info'    as const, msg: 'Heads up.'                        },
 ]
 
 export default function ToastPreview() {

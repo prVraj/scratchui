@@ -30,10 +30,9 @@ export default function Example() {
 }`
 
 const propsRows = [
-  { prop: 'defaultValue', type: 'string', defaultVal: '—', description: 'The item open by default (uncontrolled).' },
-  { prop: 'value', type: 'string | null', defaultVal: '—', description: 'Controlled open item value.' },
-  { prop: 'onValueChange', type: '(value: string | null) => void', defaultVal: '—', description: 'Called when the open item changes.' },
-  { prop: 'type', type: "'single' | 'multiple'", defaultVal: "'single'", description: 'Whether one or multiple items can be open at once.' },
+  { prop: 'items', type: 'AccordionItem[]', defaultVal: '—', description: 'Array of items: { title, content }.' },
+  { prop: 'allowMultiple', type: 'boolean', defaultVal: 'false', description: 'Whether multiple items can be open at once.' },
+  { prop: 'defaultOpen', type: 'number[]', defaultVal: '[]', description: 'Indexes of items that start open.' },
 ]
 
 export default async function AccordionPage() {
